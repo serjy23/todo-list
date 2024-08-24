@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>To-Do List New Item</title>
+    <title>{{ config('app.name') }} New Item</title>
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
 </head>
 <body>

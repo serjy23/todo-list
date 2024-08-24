@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>To-Do List</title>
+    <title>{{ config('app.name') }}</title>
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 </head>
 <body>
