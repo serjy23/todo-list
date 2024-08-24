@@ -7,14 +7,16 @@
 </head>
 <body>
 
-    <p>
-        This is a simple to-do list app.
-    </p>
-    <a href="{{ url('/dashboard') }}">
-        <button>
-            Start
-        </button>
-    </a>
+    <div class="container">
+        <p>
+            This is a simple to-do list app.
+        </p>
+        <a href="{{ url('/dashboard') }}">
+            <button>
+                Check out
+            </button>
+        </a>
+    </div>
 
 </body>
 </html>
