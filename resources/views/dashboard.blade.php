@@ -42,7 +42,7 @@
 		</div>
 
         <footer>
-            <span>Made with <i class="fa-solid fa-heart"></i> by <a href="https://example.com/" target="_blank">Fafik</a></span>
+            <span>Made with <i class="fa-solid fa-heart"></i> by <a href="https://fafik.xyz/" target="_blank">Fafik</a></span>
             <span><a href="https://github.com/Fafikk/todo-list/" target="_blank">Github</a></span>
         </footer>
 	</body>
