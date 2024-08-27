@@ -2,19 +2,23 @@
 `todo-list` is a free, self-hosted, open source app, written using laravel 11.x, that may help You organise your tasks.
 
 # Installation using sqlite
-1. Install composer dependencies
+1. Clone the git repository
+```git
+git clone https://github.com/Fafikk/todo-list.git
+```
+2. Install composer dependencies
 ```bash
 composer install
 ```
-2. Copy environment file
+3. Copy environment file
 ```bash
 cp .env.example .env
 ```
-3. Generate app key
+4. Generate app key
 ```bash
 php artisan key:generate
 ```
-4. Migrate database
+5. Migrate database
 ```bash
 php artisan migrate
 ```
@@ -24,7 +28,7 @@ If you see the warn:
 ```
 Type `yes` in command line.
 <br>
-5. Start development server:
+6. Start development server:
 ```bash
 php artisan serve
 ```
