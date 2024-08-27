@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,4 +11,5 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-// TODO: item controller
+Route::post('/item', [ ItemController::class, 'insert' ]);
+Route::delete('/item', [ ItemController::class, 'delete' ]);
