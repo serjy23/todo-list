@@ -191,7 +191,6 @@ ul.todo li .buttons button.complete svg {
 li form{
   margin-left: auto;
   margin-right: -80px;
-  font-size: 20px;
 }
 
 .delete{
@@ -205,6 +204,9 @@ li form{
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+
+  
+  font-size: 20px;
 }
 
 .delete:hover{

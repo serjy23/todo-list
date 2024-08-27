@@ -18,7 +18,7 @@
 	<body>
 
 		<header>
-			<form action="/item" method="POST">
+			<form action="{{ url('/item') }}" method="POST">
                 @csrf
                 <input type="text" placeholder="Enter an activity.." name="item" required>
 			    <button id="add">
@@ -33,10 +33,10 @@
                 @foreach ($tasks as $task)
                     <li>
                         {{ $task->name }}
-                        <span style="margin-left: auto;">&nbsp;</span>
-                        <span style="color: gray;">Created at: {{ $task->created_at }}</span>
-                        <form action="/item" method="post">
+                        <form action="{{ route('item.destroy', $task->id) }}" method="post">
+                            @csrf
                             @method('DELETE')
+                            <span style="color: gray; margin-right: 15px;">Created at: {{ $task->created_at }}</span>
                             <button class="delete">
                                 <i class="fa-light fa-trash-can"></i>
                             </button>

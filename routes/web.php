@@ -12,4 +12,4 @@ Route::get('/', function () {
 Route::get('/dashboard', [ DashboardController::class, 'view' ]);
 
 Route::post('/item', [ ItemController::class, 'insert' ]);
-Route::delete('/item', [ ItemController::class, 'delete' ]);
+Route::delete('/item/{id}', [ ItemController::class, 'delete' ])->name('item.destroy');

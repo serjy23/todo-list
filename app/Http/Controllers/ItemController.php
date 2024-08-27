@@ -9,15 +9,18 @@ use Illuminate\Http\Request;
 class ItemController extends Controller
 {
     public function insert() {
-        // $task = new Task();
-        // $task->name = "Test";
-        // $task->save();
+        $item_name = request()->get('item', 'Empty');
+
+        $task = new Task();
+        $task->name = $item_name;
+        $task->save();
 
         return view('welcome');
     }
 
-    public function delete() {
-        
+    public function delete($id) {
+        $to_delete = Task::where('id', $id)->first();
+        $to_delete->delete();
 
         return view('welcome');
     }
