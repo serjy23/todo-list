@@ -23,6 +23,7 @@ If you see the warn:
  WARN  The SQLite database configured for this application does not exist: C:\path_to_app\todo-list\database\database.sqlite.
 ```
 Type `yes` in command line.
+<br>
 5. Start development server:
 ```bash
 php artisan serve
