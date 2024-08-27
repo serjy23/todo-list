@@ -19,7 +19,7 @@ class ItemController extends Controller
     }
 
     public function delete($id) {
-        $to_delete = Task::where('id', $id)->first();
+        $to_delete = Task::where('id', $id)->firstOrFail();
         $to_delete->delete();
 
         return view('welcome');
